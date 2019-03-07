@@ -1,0 +1,44 @@
+body {
+    margin: 6em 8em;
+    font-family:sans-serif;
+    background-color: #F2F2F2;
+    color: #192E40;
+}
+
+#app{
+    line-height: 1.5em;
+}
+
+button {
+    font-size: inherit;
+    border-radius: .5em;
+    background-color: #6DA6A0;
+    border: none;
+    margin: .5em;
+}
+
+input {
+    border-radius: .3em;
+    border: none;
+    background-color: rgb(171, 211, 196);
+    font-size: inherit;
+}
+
+h1 {
+    font-family: fantasy;
+    font-style: oblique;
+    text-align: center;
+    font-size: 3em;
+}
+
+#resultDiv {
+    text-decoration: none;
+    color: inherit;
+    font-size: 3em;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+#resultDiv a {
+    color: #6DA67B;
+}

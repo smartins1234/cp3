@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/styles.css" />
+    <title>CP3</title>
+</head>
+
+<body>
+    <h1>Marvel Character Universe Quiz</h1>
+    <p>Answer all 3 questions correctly and get a surprise!</p>
+    <div id="app">
+
+        <label>Who is the most powerful Avenger?</label>
+        <input v-model="name" type="text"></input><br>
+        <button @click.prevent="checkName">Check Your Answer</button>
+        <div id="response1"></div>
+        <label>What is the most important date within the past 11 years? (MM/DD/YYYY)</label>
+        <input v-model="date" type="text"></input><br>
+        <button @click.prevent="checkDate">Were you correct?</button>
+        <div id="response2"></div>
+        <label>How tall is the shortest Avenger? (F'I")</label>
+        <input v-model="height" type="text"></input><br>
+        <button @click.prevent="checkHeight">Let's hope you got it right...</button>
+        <div id="response3"></div>
+
+        <br><br>
+        <label>Enter the code to reveal hints (there are spaces between each word and no capital letters): </label>
+        <input type="text" v-model="code"></input>
+        <button @click.prevent="checkCode">Enter</button>
+        <div id="hints"></div>
+
+
+        <div id="resultDiv">
+            <p>{{ result }}</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>
