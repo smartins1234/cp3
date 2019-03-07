@@ -1,5 +1,5 @@
 body {
-    margin: 6em 8em;
+    margin: 6em 8em 1em 8em;
     font-family:sans-serif;
     background-color: #F2F2F2;
     color: #192E40;
@@ -39,6 +39,15 @@ h1 {
     line-height: 1.5em;
 }
 
-#resultDiv a {
+a {
+    text-decoration: none;
     color: #6DA67B;
+}
+
+.footer {
+    margin-top: 2em;
+    position: inherit;
+    bottom: 0;
+    font-size: 1.5em;
+    text-align: center;
 }
